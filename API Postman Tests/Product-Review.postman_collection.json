@@ -1,0 +1,517 @@
+{
+	"info": {
+		"_postman_id": "3518f390-ce2f-4639-8965-1c06562a4a81",
+		"name": "Product-Review",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ProductService",
+			"item": [
+				{
+					"name": "http://localhost:9099/api/v1/product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"comment\": false,\n  \"productDescription\": \"Product-Description\",\n  \"productPrice\": 12.0000,\n  \"productReviewShowStatus\": \"PUBLIC_FOR_VISITORS\",\n  \"productTitle\": \"Product-1\",\n  \"rating\": false,\n  \"show\": false\n}"
+						},
+						"url": {
+							"raw": "http://localhost:9099/api/v1/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"api",
+								"v1",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/api/v1/product/isShowProduct/1?isShowProduct=true",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9099/api/v1/product/isShowProduct/1?isShowProduct=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"isShowProduct",
+								"1"
+							],
+							"query": [
+								{
+									"key": "isShowProduct",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/api/v1/product/isComment/1?isComment=true",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9099/api/v1/product/isComment/1?isComment=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"isComment",
+								"1"
+							],
+							"query": [
+								{
+									"key": "isComment",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/api/v1/product/isRating/1?isRating=true",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9099/api/v1/product/isRating/1?isRating=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"isRating",
+								"1"
+							],
+							"query": [
+								{
+									"key": "isRating",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/api/v1/product?productId=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9099/api/v1/product?productId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"api",
+								"v1",
+								"product"
+							],
+							"query": [
+								{
+									"key": "productId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/api/v1/product",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"comment\": true,\n  \"productDescription\": \"Description\",\n  \"productId\": 1,\n  \"productPrice\": 14.0000,\n  \"productReviewShowStatus\": \"PUBLIC_FOR_VISITORS\",\n  \"productTitle\": \"Produtc-title-edit\",\n  \"rating\": true,\n  \"show\": true\n}"
+						},
+						"url": {
+							"raw": "http://localhost:9099/api/v1/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"api",
+								"v1",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/api/v1/product/approved?productId=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9099/api/v1/product/approved?productId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"approved"
+							],
+							"query": [
+								{
+									"key": "productId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/api/v1/product/page?pageNumber=0&pageSize=10",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9099/api/v1/product/page?pageNumber=0&pageSize=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"page"
+							],
+							"query": [
+								{
+									"key": "pageNumber",
+									"value": "0"
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/api/v1/product/review-showStatus/1?productReviewShowStatus=PRIVATE_FOR_BUYERS",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9099/api/v1/product/review-showStatus/1?productReviewShowStatus=PRIVATE_FOR_BUYERS",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"review-showStatus",
+								"1"
+							],
+							"query": [
+								{
+									"key": "productReviewShowStatus",
+									"value": "PRIVATE_FOR_BUYERS"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ReviewService",
+			"item": [
+				{
+					"name": "http://localhost:9099/api/v1/review",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"comment\": \"string\",\n  \"product\": {\n    \"comment\": true,\n    \"id\": 1,\n    \"productDescription\": \"string\",\n    \"productPrice\": 0,\n    \"productReviewShowStatus\": \"PUBLIC_FOR_VISITORS\",\n    \"productTitle\": \"string\",\n    \"rating\": true,\n    \"show\": true\n  },\n  \"rating\": 1,\n  \"reviewCommentStatus\": \"INITIAL\",\n  \"reviewRatingStatus\": \"INITIAL\",\n  \"reviewTitle\": \"string\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:9099/api/v1/review",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"api",
+								"v1",
+								"review"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/api/v1/review",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9099/api/v1/review",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"api",
+								"v1",
+								"review"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/api/v1/review/comment-status/{reviewId}?reviewCommentStatus=APPROVED&reviewId=1",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9099/api/v1/review/comment-status/{reviewId}?reviewCommentStatus=APPROVED&reviewId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"api",
+								"v1",
+								"review",
+								"comment-status",
+								"{reviewId}"
+							],
+							"query": [
+								{
+									"key": "reviewCommentStatus",
+									"value": "APPROVED"
+								},
+								{
+									"key": "reviewId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/api/v1/review/page?pageNumber=0&pageSize=10",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9099/api/v1/review/page?pageNumber=0&pageSize=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"api",
+								"v1",
+								"review",
+								"page"
+							],
+							"query": [
+								{
+									"key": "pageNumber",
+									"value": "0"
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/api/v1/review/rating-status/{reviewId}?reviewId=1&reviewRatingStatus=APPROVED",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9099/api/v1/review/rating-status/{reviewId}?reviewId=1&reviewRatingStatus=APPROVED",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"api",
+								"v1",
+								"review",
+								"rating-status",
+								"{reviewId}"
+							],
+							"query": [
+								{
+									"key": "reviewId",
+									"value": "1"
+								},
+								{
+									"key": "reviewRatingStatus",
+									"value": "APPROVED"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/api/v1/review/user-reviews?pageNumber=0&pageSize=3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9099/api/v1/review/user-reviews?pageNumber=0&pageSize=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"api",
+								"v1",
+								"review",
+								"user-reviews"
+							],
+							"query": [
+								{
+									"key": "pageNumber",
+									"value": "0"
+								},
+								{
+									"key": "pageSize",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
