@@ -31,7 +31,7 @@ Navigate to the rest module and run the following commands:
 
 
 ## API Testing
-Postman API requests/tests are available [in this folder]()
+Postman API requests/tests are available [in this folder](https://github.com/mahdieha/product-reviews/tree/master/API%20Postman%20Tests)
 
 ## Swagger Docs
 Swagger documentation available:
